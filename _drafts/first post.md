@@ -4,7 +4,7 @@ image_1:
   image: "/uploads/2018/06/21/drone-photo.jpeg"
   caption: ddfgdfgdf
 image_2:
-  image: ''
+  image: "/uploads/2018/06/21/forestry-symbol.svg"
   caption: ''
 
 ---
