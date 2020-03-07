@@ -20,8 +20,8 @@ page_sections:
     button_text: Sign Up
 - template: hero-banner-w-image
   block: hero-2
-  headline: devgrow <br><strong>career coaching</strong>
-  content: Develop your organization's most <br>important resource - people.
+  headline: Develop your organization's most<br>important resource - <strong>people</strong>.
+  content: ''
   cta:
     enabled: true
     url: https://github.com/forestryio/ubuild-jekyll
