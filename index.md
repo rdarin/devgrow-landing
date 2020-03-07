@@ -5,7 +5,7 @@ date: 2017-11-22 23:00:00 +0000
 page_sections:
 - template: navigation-header-w-button
   block: header-2
-  logo: "/uploads/2020/03/05/dglogo.png"
+  logo: "/uploads/2020/03/07/devgrow_final.svg"
   navigation:
   - link: "/"
     link_text: Home
