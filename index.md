@@ -33,13 +33,16 @@ page_sections:
 - template: content-feature
   block: feature-1
   media_alignment: Left
-  headline: <strong>Swap &amp; Switch<span class="light">&nbsp;</span></strong><span
-    class="light">the Blocks to create sites quickly</span>
-  content: Quickly assemble and create custom sites with 16 design blocks for seven
-    different sections.
+  headline: Increase the<strong> motivation &amp; satisfaction </strong>of your team<br>
+  content: Learn from your team to individualize your approach, make them happier,
+    and increase productivity.
   media:
     image: "/uploads/2018/06/21/blocks-split.png"
     alt_text: uBuild Blocks Mock-Up
+- template: signup-bar
+  block: cta-bar
+  content: ''
+  email_recipient: ''
 - template: content-feature
   block: feature-1
   media_alignment: Right
@@ -50,10 +53,6 @@ page_sections:
   media:
     image: "/uploads/2018/06/21/edit.gif"
     alt_text: Customize Blocks
-- template: signup-bar
-  block: cta-bar
-  content: ''
-  email_recipient: ''
 - template: 1-column-text
   block: one-column-1
   headline: 16 Fully Responsive Design Blocks
