@@ -41,7 +41,7 @@ page_sections:
     alt_text: uBuild Blocks Mock-Up
 - template: signup-bar
   block: cta-bar
-  content: Learn how to take your team to the next level
+  content: Learn how to take your team to the next level with devgrow
   email_recipient: team@devgrow.net
 - template: content-feature
   block: feature-1
