@@ -20,7 +20,7 @@ page_sections:
     button_text: Sign Up
 - template: hero-banner-w-image
   block: hero-2
-  headline: "<strong>Happy &amp; engaged engineering teams</strong>"
+  headline: Happy &amp; engaged engineering teams
   content: Develop your organization's most<br>important resource - <strong>people</strong>.
   cta:
     enabled: true
