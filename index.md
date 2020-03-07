@@ -25,7 +25,7 @@ page_sections:
   cta:
     enabled: true
     url: https://github.com/forestryio/ubuild-jekyll
-    button_text: 'See on GitHub '
+    button_text: See a product demo
   image:
     image: "/uploads/2020/03/07/product-shot-1.png"
     alt_text: Product Shot
