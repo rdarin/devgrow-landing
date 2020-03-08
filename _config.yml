@@ -1,32 +1,73 @@
-title: uBuild Design Blocks
-author: Forestry.io
-email: support@forestry.io
-description: >-
-  ubuild-jekyll is a Jekyll theme desgined to work with Forestry's Blocks feature.
-  This theme provides a set of page-level components and a pre-configured Forestry Blocks UI
-  that will empower content editors to construct their own webpages.
-baseurl: "/ubuild-jekyll" # the subpath of your site, e.g. /blog
-url: "" # your site's origin, e.g. https://forestry.io
+# Site
+name: "devgrow"
+title: "devgrow"
+description: "Increasing the performance & happiness of software engineering teams"
+logo: 'assets/images/logo.svg'
+favicon: 'assets/images/fav.svg'
+baseurl: ''
+google_analytics: 'UA-151653454-1'
+disqus: 'demowebsite'
+mailchimp-list: 'https://gmail.us5.list-manage.com/subscribe/post?u=922c89530ad76eefc90b8c22c&amp;id=359b869243'
+include: ["_pages"]
+permalink: /:title/
 
-# Build settings
-defaults:
-  - scope:
-      path: "" # an empty string here means all files in the project
-    values:
-      layout: "default" # this ensures all content renders with layouts/default.html
+# Authors
+authors:
+  matt:
+    name: Matt
+    display_name: Matt Healy
+    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    email: team+matt@devgrow.net
+    web: https://www.wowthemes.net
+    twitter: https://twitter.com/wowthemesnet
+    description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
+  ryan:
+    name: Ryan
+    display_name: Ryan DaRin    
+    gravatar: 7eb20e38bbc7127401032569901912d6
+    email: team+ryan@devgrow.net
+    web: https://devgrow.net
+    twitter: https://twitter.com/devgrow
+    description: "This is the author box. Write a short description of the author here. You are currently previewing Mediumish demo, a Jekyll template compatible with Github pages."
 
+
+
+# Plugins
 plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
   - jekyll-feed
-  - jekyll-menus
+  - jekyll-seo-tag
+  - jekyll-archives
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Pagination 
+paginate: 6
+paginate_path: /page:num/
+    
+# Other
+markdown: kramdown
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
+adsense: "disabled"
+adsense-data-ad-client: ""
+adsense-data-ad-slot: ""
+
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "disabled"
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]

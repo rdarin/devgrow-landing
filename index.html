@@ -1,0 +1,85 @@
+---
+layout: default
+title: Home
+---
+
+{% if page.url == "/" %}
+
+<div class="container explainers" id="intro">
+    <div class="row">
+      <div class="col-md icon-container left">
+        <i class="icon featured fas fa-comments"></i>
+        <h2>Open lines of communication</h2>
+        <p>Foster effective 2-way growth conversations.</p>
+      </div>
+
+      <div class="col-md icon-container middle">
+        <i class="icon featured fas fa-compass"></i>
+<h2>Personalize career trajectories</h2>
+<p>Align today's tasks with long term goals.</p>
+      </div>
+      <div class="col-md icon-container right">
+        <i class="icon featured fas fa-seedling"></i>
+        <h2>Increase motivation &amp; satisfaction</h2>
+        <p>Learn from your team to individualize your approach.</p>
+      </div>
+
+    </div>
+</div>
+
+
+
+<!-- Featured
+================================================== -->
+<section class="featured-posts">
+    <div class="section-title">
+        <h2><span>Featured</span></h2>
+    </div>
+    <div class="row">
+
+    {% for post in site.posts %}
+
+        {% if post.featured == true %}
+
+            {% include featuredbox.html %}
+
+        {% endif %}
+
+    {% endfor %}
+
+    </div>
+</section>
+
+{% endif %}
+
+<!-- Posts Index
+================================================== -->
+<section class="recent-posts">
+
+    <div class="section-title">
+
+        <h2><span>All Stories</span></h2>
+
+    </div>
+
+    <div class="row listrecent">
+
+        {% for post in paginator.posts %}
+
+        {% include postbox.html %}
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+<!-- Pagination
+================================================== -->
+<div class="bottompagination">
+<div class="pointerup"><i class="fa fa-caret-up"></i></div>
+<span class="navigation" role="navigation">
+    {% include pagination.html %}
+</span>
+</div>
+
